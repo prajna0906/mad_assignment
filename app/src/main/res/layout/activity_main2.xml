@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/backliquid">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an account"
+        android:layout_centerHorizontal="true"
+        android:textSize="45dp"
+        android:id="@+id/title"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:hint="Email"
+        android:textSize="20sp"
+        android:layout_below="@+id/title"
+        android:id="@+id/email"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:layout_below="@+id/email"
+        android:id="@+id/password"
+        android:inputType="textPassword"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:hint="Re-type password"
+        android:textSize="20sp"
+        android:layout_below="@+id/password"
+        android:id="@+id/passwordrep"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/Sub"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordrep"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="60dp"
+        android:textSize="20dp"
+        android:background="@drawable/custom_button"
+        android:text="Create" />
+    <Button
+        android:id="@+id/Clear"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="clear"
+        android:layout_below="@id/passwordrep"
+        android:layout_alignParentRight="true"
+        android:layout_margin="60dp"
+        android:textSize="20dp"
+        android:background="@drawable/custom_button"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:src="@drawable/flame__1_" />
+
+
+</RelativeLayout>
